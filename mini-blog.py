@@ -1,6 +1,6 @@
 #-*-coding: UTF-8 -*-
 import json
-URL = "https://thalisonwilker.github.io/minimal-blog/posts/"
+URL = "https://thalisonwilker.github.io/minimal-blog/post/"
 
 def git_push(commit=""):
 	import os
@@ -61,7 +61,7 @@ title = title.replace(" ","-").lower()
 urls.write(URL+""+title+".html#"+title_+"\n" )
 urls.close()
 
-post = open("posts/"+title+".html","w")
+post = open("post/"+title+".html","w")
 
 post.write(post_body)
 
