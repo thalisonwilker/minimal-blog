@@ -1,0 +1,132 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(munito.woff2) format('woff2');
+}
+
+*{
+	margin:0;
+	border:0;
+	padding:0;
+	border-image-width: 0;
+}
+
+body{
+	background-color: #7f8c8d;
+	margin: 0 10%;
+}
+h1{
+
+}
+.title-header{
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3em;
+  text-align: center;
+
+}
+.card-post{
+	border-radius: 5px;
+	border: 4px black solid;
+	padding: 5px;
+	-webkit-box-shadow: -3px 18px 24px 0px rgba(217,208,217,1);
+    -moz-box-shadow: -3px 18px 24px 0px rgba(217,208,217,1);
+	box-shadow: -3px 18px 24px 0px rgba(217,208,217,1);
+	box-sizing: border-box;
+}
+
+.post-header{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 4em;
+	text-align: center;
+	border-bottom: 3px black dotted;
+}
+
+.post-content{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2em;
+	text-align: justify;
+	padding: 5px;
+
+}
+
+.post-link{
+  display: block;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.4em;
+  color: #ecf0f1;
+  border: 2px black solid;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  text-decoration: none;
+  margin-bottom: 5px;
+  border-radius: 4px;
+}
+
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a {
+  margin-top: 0;
+  margin-bottom: 5px;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#cssmenu {
+  padding: 0 5px;
+  width: auto;
+  font-family: Helvetica, Arial, sans-serif;
+  background: #dddddd;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+#cssmenu:after,
+#cssmenu ul:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+#cssmenu ul li {
+  display: inline-block;
+}
+#cssmenu.align-right ul li {
+  float: right;
+}
+#cssmenu.align-center ul {
+  text-align: center;
+}
+#cssmenu ul li a {
+  font-size: 14px;
+  padding: 15px;
+  text-decoration: none;
+  color: #0e83cd;
+}
+#cssmenu ul li:hover a,
+#cssmenu ul li a:hover,
+#cssmenu ul li.active a {
+  color: #333333;
+}
+@media all and (max-width: 640px) {
+  #cssmenu {
+    padding: 0;
+    border-radius: 0;
+    border: 0;
+  }
+  #cssmenu ul li,
+  #cssmenu.align-center,
+  #cssmenu.align-right {
+    display: block;
+  }
+}
